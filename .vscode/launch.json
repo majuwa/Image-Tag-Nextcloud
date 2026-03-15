@@ -1,0 +1,21 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "tag_sync.py",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/tag_sync.py",
+      "python": "${workspaceFolder}/.venv/bin/python",
+      "args": ["${input:webdavPath}"],
+      "console": "integratedTerminal"
+    }
+  ],
+  "inputs": [
+    {
+      "id": "webdavPath",
+      "type": "promptString",
+      "description": "WebDAV path to image (e.g. /Photos/vacation/img.jpg)"
+    }
+  ]
+}
